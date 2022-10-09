@@ -1,0 +1,103 @@
+/* Tham khảo  internet và căn cứ 
+theo size từ dev-tool của chrome
+max-width: 320px (điện thoại di động, hiển thị chiều dọc)
+max-width: 480px (điện thoại di động, hiển thị chiều ngang)
+max-width: 600px (máy tính bảng, hiển thị chiều dọc) */
+
+@media (max-width: 600px) {
+  /* Phần chỉ thị cho Digital-CV */
+
+  section > .container {
+    width: 100vw;
+  }
+
+  .banner-img {
+    background-position-x: center;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+  #nav-bar {
+    height: auto;
+    display: block;
+  }
+
+  #nav-bar a:link,
+  a:visited {
+    display: block;
+    padding: 10px;
+    border-left: none;
+    text-align: left;
+  }
+
+  #target {
+    max-width: 768px;
+    padding-bottom: 0;
+    padding-top: 10px;
+  }
+
+  #personal-info {
+    max-width: 768px;
+    margin-top: 5px;
+    padding-top: 10px;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .job-text {
+    font-size: 16px;
+  }
+
+  .job-box-grid {
+    padding-right: 10px;
+  }
+
+  .cer-content {
+    flex-direction: column;
+    /* gap: 30px; */
+    justify-items: center;
+  }
+
+  .cer-content-2 {
+    border-left: none;
+    border-top: 2px solid #d6c08d;
+    padding-top: 20px;
+  }
+
+  #project .container .row {
+    row-gap: 10px;
+  }
+
+  #project .col-md-4 {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .project-title {
+    font-size: 14px;
+    padding: 20px 0px 20px 8px;
+  }
+
+  /* Phần chỉ thị cho project-charter */
+  /* .container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  .bi-flag {
+    margin-left: 130px;
+  }
+
+  #Goals .col {
+    margin-top: 0;
+  }
+
+  #Goals h4 {
+    margin-left: 150px;
+  }
+}

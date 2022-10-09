@@ -1,0 +1,431 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  color: #1d3557;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+
+  padding: 30px 50px;
+}
+
+#nav-bar {
+  text-align: center;
+}
+
+/* BANNER */
+
+.banner-img {
+  position: relative;
+  background-image: url(../images/banner.jpg);
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  filter: brightness(50%);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.banner-text {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+
+.banner-text h1 {
+  text-transform: uppercase;
+}
+
+.banner-text span {
+  color: #bdc3c7;
+}
+
+/* Advance */
+
+.default-avt {
+  height: 260px;
+  width: 240px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.banner-avt {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, 30%);
+  /* fail-test */
+  /* nghiên cứu nguyên nhân khắc phục lệch animation */
+  /* animation: slideInFromBottom 0.5s ease-in; */
+}
+
+/* NAVBAR */
+
+#nav-bar a:link,
+a:visited {
+  text-decoration: none;
+  color: #1d3557;
+  text-transform: uppercase;
+  border-left: 2px solid #dfe6e9;
+  padding: 40px 20px 32px;
+}
+
+#nav-bar a:hover,
+a:active {
+  font-weight: bold;
+  cursor: grab;
+}
+
+.nav-text {
+  display: inline-block;
+  margin: 10px 70px 0;
+}
+
+.nav-text h1 {
+  font-weight: bold;
+  font-size: 32px;
+}
+.nav-text span {
+  color: #bdc3c7;
+}
+
+.icon {
+  color: #0abde3;
+  font-weight: bold;
+}
+
+/* Personal Info */
+/* .grid no-longer needed */
+/* .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 40px;
+  line-height: 2;
+  margin-top: 30px;
+} */
+
+li span {
+  font-weight: bold;
+}
+
+.mt-40 {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  padding-bottom: 20px;
+  font-size: 32px;
+}
+
+#target {
+  padding: 40px 30px;
+  background-color: #e7f2f8;
+  font-size: 18px;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+#personal-info {
+  padding: 20px 30px 80px 30px;
+  background-color: #dff1fa;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+}
+
+/* Job Info */
+
+.job-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  row-gap: 20px;
+  /* align-items: start; */
+}
+
+.job-box-grid {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  column-gap: 20px;
+  row-gap: 40px;
+  border: 1px solid #bdc3c7;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+  align-content: start;
+}
+
+.job-content {
+  grid-column: 1/-1;
+  margin: 10px;
+}
+
+.job-title {
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.job-text {
+  font-size: 18px;
+}
+
+.now {
+  background-color: #0abde3;
+  padding: 4px 4px;
+  color: #fff;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.list,
+.list1 {
+  position: relative;
+}
+
+.job-node::before {
+  content: "•";
+  color: #0abde3;
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-block;
+  position: absolute;
+  left: -25px;
+  top: 0;
+}
+
+/* Sở thích */
+.icon-rounding {
+  width: 50px;
+  height: 50px;
+  color: #0abde3;
+  border: 2px solid #0abde3;
+  padding: 10px;
+  border-radius: 50%;
+
+  margin-bottom: 10px;
+  margin-left: 18px;
+  justify-content: center;
+}
+
+/* Ngôn ngữ + Kỹ năng */
+
+.good {
+  background-color: #0abde3;
+  display: inline-block;
+  height: 3px;
+  width: 45px;
+}
+
+.bad {
+  background-color: #cfcfcf;
+  display: inline-block;
+  height: 3px;
+  width: 45px;
+}
+
+/* Chứng chỉ */
+/* .cer-grid no-longer needed */
+/* .cer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 30px;
+} */
+
+.cer-img {
+  width: 220px;
+  margin-right: 5px;
+  margin-left: 5px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.cer-content {
+  display: flex;
+  gap: 5px;
+}
+
+.cer-content-2 {
+  padding-left: 15px;
+  border-left: 2px solid #d6c08d;
+}
+
+.cer-content-3 {
+  grid-column: 1/-1;
+  padding-top: 20px;
+  border-top: 2px solid #d6c08d;
+}
+
+/* Dự án */
+/* .project-grid and .project-flex
+are no-longer needed */
+/* .project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+} */
+
+/* .project-flex {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+} */
+
+#project .container {
+  padding: 30px 25px;
+}
+
+.now {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.project-span {
+  margin-left: 4px;
+  margin-right: 20px;
+}
+
+.project-title {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  border-left: 1px solid #bdc3c7;
+  border-right: 1px solid #bdc3c7;
+}
+
+.project-border {
+  padding: 10px;
+  border-top: 1px solid #bdc3c7;
+  border-left: 1px solid #bdc3c7;
+  border-right: 1px solid #bdc3c7;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border: 1px solid #bdc3c7;
+}
+
+td {
+  padding: 10px;
+}
+
+tr td:first-child {
+  width: 94px;
+  vertical-align: top;
+  font-weight: bold;
+  padding-right: 0;
+}
+
+tr td:last-child {
+  padding-left: 0;
+}
+
+/* FOOTER */
+
+#footer {
+  line-height: 1.5;
+  text-align: center;
+}
+
+#footer a:link,
+a:visited {
+  font-size: 18px;
+  /* font-weight: bold; */
+  text-decoration: none;
+  color: #bdc3c7;
+}
+
+#footer a:hover,
+a:active {
+  cursor: grab;
+  color: #0abde3;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* action */
+
+#target {
+  animation: slideInFromLeft 0.5s ease-in;
+}
+
+#personal-info {
+  animation: slideInFromRight 0.5s ease-in;
+}
+
+/* Không hiệu quả - fail test */
+/* thay thế hiệu ứng khác 
+hoặc tìm cách để khi kéo xuống tầm nhìn hiệu ứng mới chạy */
+/* .pg-s1 {
+  animation: slideInFromLeft 0.5s ease-in;
+}
+
+.pg-s2 {
+  animation: slideInFromBottom 0.5s ease-in;
+}
+
+.pg-s3 {
+  animation: slideInFromRight 0.5s ease-in;
+} */

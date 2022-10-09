@@ -1,0 +1,120 @@
+/* Tham khảo  internet và căn cứ 
+theo size từ dev-tool của chrome
+max-width: 600px (máy tính bảng, hiển thị chiều dọc)
+ax-width: 800px (máy tính bảng, hiển thị chiều ngang)
+max-width: 768px (máy tính bảng loại to, hiển thị chiều dọc)
+max-width: 1024px (máy tính bảng loại to, hiển thị chiều ngang) */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Phần chỉ thị cho Digital-CV */
+  .banner-img {
+    background-position-x: center;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+  #nav-bar a:link,
+  a:visited {
+    padding: 16px;
+    margin-right: 0.7rem;
+    padding-bottom: 30px;
+  }
+
+  #nav-bar {
+    margin-top: 1rem;
+  }
+
+  #personal-info {
+    font-size: 16px;
+    padding-right: 40px;
+    padding-top: 25px;
+    padding-bottom: 60px;
+    margin-top: 0px;
+  }
+
+  #target {
+    font-size: 16px;
+    padding: 25px 30px 10px 10px;
+  }
+
+  #target h1,
+  #personal-info h1 {
+    font-size: 1.65rem;
+    font-weight: 600;
+  }
+
+  .icon-rounding {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hobbit-text {
+    font-size: 0.9rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .job-text {
+    font-size: 18px;
+  }
+
+  .cer-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #project .container {
+    padding: 30px 25px;
+  }
+
+  #project .col-md-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    align-items: stretch;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .project-title {
+    font-size: 13px;
+    padding: 20px 0px 20px 8px;
+  }
+
+  .project-border {
+    font-size: 14px;
+    padding: 10px 0px 10px 4px;
+  }
+
+  .now {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  .project-span {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  tr td:first-child {
+    width: 34%;
+    vertical-align: top;
+    font-size: 14px;
+    font-weight: bold;
+    padding-right: 0;
+    padding-left: 3px;
+  }
+
+  tr td:last-child {
+    font-size: 13px;
+    padding-right: 4px;
+  }
+
+  /* Phần chỉ thị cho project-charter */
+  .bi-flag {
+    margin-left: 0px;
+  }
+}
